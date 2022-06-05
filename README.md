@@ -23,6 +23,10 @@ _In the simplest form, like this example will create `/posts` route , each resou
 }
 ```
 
+3 . You simply add new route and your JSON array data to the `db.json`, if your own data is a CSV file, you can convert it to JSON file via https://www.convertcsv.com/csv-to-json.htm
+Upload your CSV file, encoding choose “UTF-8”, choose “CSV to JSON”. Make sure data has one column called "id".
+
+
 ---
 
 ## Deploy to **Heroku**
@@ -56,20 +60,28 @@ Heroku is a free hosting service for hosting small projects. Easy setup and depl
 heroku login
 ```
 
-5 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`:
+5 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create <project-name>`:
 ```bash
-heroku create my-cool-project
+heroku create <project-name>
 ```
+Note that it shall give you the web app URL and the git repository in the console, e.g.
+
+https://project-name.herokuapp.com/
+
+https://git.heroku.com//project-name'.git
 
 6 . Push your app to __Heroku__ (you will see a wall of code)
 ```bash
-git push heroku main
+git add .
+git commit -m "first commit"
+git push heroku HEAD:master
 ```
 
 7 . Visit your newly create app by opening it via heroku:
 ```bash
 heroku open
 ```
+It shall open your web app in your browser.
 
 8 . For debugging if something went wrong:
 ```bash

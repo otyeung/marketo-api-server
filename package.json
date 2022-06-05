@@ -6,8 +6,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Dennis Yeung",
-  "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.0"
   }
