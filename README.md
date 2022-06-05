@@ -24,7 +24,9 @@ _In the simplest form, like this example will create `/posts` route , each resou
 ```
 
 3 . You simply add new route and your JSON array data to the `db.json`, if your own data is a CSV file, you can convert it to JSON file via https://www.convertcsv.com/csv-to-json.htm
-Upload your CSV file, encoding choose “UTF-8”, choose “CSV to JSON”. Make sure data has one column called "id".
+1. Make sure data has one column called "id". Upload your CSV file
+2. encoding choose “UTF-8”
+3. choose “CSV to JSON”, click "Download Result".
 
 
 ---
@@ -68,7 +70,7 @@ Note that it shall give you the web app URL and the git repository in the consol
 
 https://project-name.herokuapp.com/
 
-https://git.heroku.com//project-name'.git
+https://git.heroku.com//project-name.git
 
 6 . Push your app to __Heroku__ (you will see a wall of code)
 ```bash
