@@ -1,5 +1,4 @@
 {
-  "homepage": "https://otyeung.github.io/marketo-api-server",
   "name": "marketo-api-server",
   "version": "1.0.0",
   "description": "Simple web api for Marketo CRM integration",
@@ -9,8 +8,5 @@
   },
   "dependencies": {
     "json-server": "^0.17.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
