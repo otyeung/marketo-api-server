@@ -74,6 +74,7 @@ https://git.heroku.com//project-name.git
 
 6 . Push your app to __Heroku__ (you will see a wall of code)
 ```bash
+git remote add heroku <your Heroku git URL>
 git add .
 git commit -m "first commit"
 git push heroku HEAD:master
